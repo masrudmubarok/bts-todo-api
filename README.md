@@ -49,13 +49,26 @@ BTS Todo API adalah API backend untuk mengelola daftar todo. API ini dibangun me
 
     * Ganti `your_mysql_username`, `your_mysql_password`, dan `your_jwt_secret` dengan nilai yang sesuai.
 
-5.  Jalankan migrasi database:
+5.  **Impor Database (Opsional):**
+
+    * Jika Anda memiliki file dump database `bts-todo.mysql`, Anda dapat mengimpornya ke MySQL Anda menggunakan perintah berikut:
+
+        ```bash
+        mysql -u your_mysql_username -p your_mysql_password todo_api < bts-todo.mysql
+        ```
+
+        * Pastikan Anda telah membuat database `todo_api` terlebih dahulu jika belum ada.
+        * Jika anda tidak memiliki file import, lanjutkan ke langkah 6.
+
+6.  Jalankan migrasi database:
 
     ```bash
     npx sequelize-cli db:migrate
     ```
 
-6.  Jalankan server:
+    * Langkah ini akan membuat tabel-tabel yang diperlukan jika database belum diimpor atau jika ada perubahan skema yang perlu diterapkan.
+
+7.  Jalankan server:
 
     ```bash
     npm start
