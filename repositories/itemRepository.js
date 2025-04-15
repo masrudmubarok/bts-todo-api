@@ -1,4 +1,4 @@
-const { Item } = require("../models/itemModel");
+const Item = require("../models/itemModel");
 
 const getAllItemsInChecklist = async (checklistId) => {
   return Item.findAll({ where: { checklistId } });

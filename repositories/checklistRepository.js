@@ -1,4 +1,4 @@
-const { Checklist } = require("../models/checklistModel");
+const Checklist = require("../models/checklistModel");
 
 const getAllChecklists = async (userId) => {
   return Checklist.findAll({ where: { userId } });
