@@ -6,6 +6,13 @@ const Checklist = sequelize.define("Checklist", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  userId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+}, {
+  tableName: "Checklists",
+  timestamps: true,
 });
 
 module.exports = Checklist;
