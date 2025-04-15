@@ -1,4 +1,3 @@
-// services/todoService.js
 const checklistRepository = require("../repositories/checklistRepository");
 const itemRepository = require("../repositories/itemRepository");
 
