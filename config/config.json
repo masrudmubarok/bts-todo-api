@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "masrud",
+    "password": "masrud",
+    "database": "bts-todo",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "masrud",
+    "password": "masrud",
+    "database": "bts-todo",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "masrud",
+    "password": "masrud",
+    "database": "bts-todo",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
